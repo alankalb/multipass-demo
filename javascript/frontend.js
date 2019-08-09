@@ -56,6 +56,8 @@ function getMultipass(product) {
     xhttp.open("POST", url, true);
     xhttp.setRequestHeader("Content-Type", "application/json");
     xhttp.send(params);
+  }else{
+    window.open("https://appleid.apple.com/#!&page=signin", '_blank');
   }
   
 }

@@ -5,12 +5,8 @@ dotenv.config();
 var url = function(email, first_name, last_name, address, return_to) {
   var multipassify = new Multipassify(process.env.multipass_secret);
   var customerData = { 
-    email: email,  
-    first_name: first_name,
-    last_name: last_name,
-    addresses: [
-      address
-    ],
+    email: email,
+    tag_string: "apple",
     return_to: return_to
   };
   var token = multipassify.encode(customerData);
